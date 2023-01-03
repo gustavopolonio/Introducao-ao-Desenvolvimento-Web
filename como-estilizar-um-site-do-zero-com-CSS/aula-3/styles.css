@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+  --white: #fff;
+  --red: #aa0505;
+  --gray: #959595;
+  --blue: #56c5db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button, input, textarea {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* sobre.html */
+/* Header */
+.main-header {
+  background-image: url("images/background-image.png");
+  background-position: 50% 39%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.header-list-container {
+  padding: 16px 0;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  color: var(--white);
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+hr {
+  width: 100%;
+}
+
+.movie-title-large {
+  /* text-align: center; */
+  font-size: 54px;
+}
+
+
+/* Main */
+.main-section {
+  padding: 40px 0 64px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px
+}
+
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.about-movie-image {
+  float: left;
+  border-radius: 8%;
+  margin: 0 20px 10px 0;
+  width: 200px;
+  height: auto;
+}
+
+.section-description {
+  color: #777;
+}
+
+.section-description + .section-description {
+  margin-top: 16px;
+}
+
+
+/*  Footer  */
+.main-footer {
+  background: var(--red);
+  padding: 16px 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-title-medium {
+  font-size: 26px;
+}
+
+.movie-title {
+  font-family: "Rock Salt", cursive;
+  color: var(--white);
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item + .footer-item {
+  margin-left: 16px;
+}
+
+.footer-item img {
+  width: 32px;
+  height: 32px;
+}
+
+
+/* index.html */
+.watch-trailer-button {
+  color: var(--white);
+  font-weight: bold;
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  padding: 8px 24px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: 0.2s;
+}
+
+.watch-trailer-button:hover {
+  background: var(--red);
+}
+
+.watch-trailer-button-player {
+  color: var(--red);
+  margin: 24px 0;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: 0.2s;
+}
+
+.watch-trailer-button-player:hover {
+  color: var(--white);
+  background: var(--red);
+}
+
+/* MAIN */
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-item + .schedule-item {
+  border-top: 1px solid #333;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.show-date {
+  width: 13%;
+}
+
+.show-city {
+  width: 28%;
+}
+
+.show-place {
+  width: 35%;
+}
+
+.buy-ticket-button {
+  width: 20%; /* Ficou faltando 4% para 100% de width: para deixar as bordas sobrando um pouco */
+}
+
+
+
+/* loja.html */
+
+/* Main */
+.normal-section + .normal-section {
+  margin-top: 80px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.movie-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.product-image {
+  width: 240px; /* Flex wrap coloca 2 posters por linha, pq a seção tem 600px */
+  height: 144px;
+}
+
+.product-price-container {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product-price {
+  margin-right: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.button-hover-background {
+  background: var(--red);
+  color: var(--white);
+  border: 2px solid var(--red);
+  border-radius: 6px;
+  padding: 4px 2px;
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.button-hover-background:hover {
+  background: transparent;
+  color: var(--red);
+}
+
+/* tabela carrinho de compras */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head-item {
+  text-align: start;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.second-col,
+.third-col {
+  width: 26%;
+}
+
+.cart-product td {
+  padding: 8px 0;
+}
+
+.product-identification {
+  display: flex;
+  align-items: center;
+}
+
+.cart-product-image {
+  width: 120px;
+  height: 70px;
+}
+
+.cart-product-title {
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+.cart-product-price {
+  font-family: "Raleway", sans-serif;
+}
+
+.product-qtd-input {
+  width: 48px;
+  height: 34px;
+  border-radius: 6px;
+  border: 2px solid var(--blue);
+  text-align: center;
+  background: #eee;
+}
+
+.remove-product-button {
+  margin-left: 12px;
+  background: #ff0000;
+  color: var(--white);
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 6px;
+
+  transition: filter 0.2s;
+}
+
+.remove-product-button:hover {
+  filter: brightness(0.8);
+}
+
+.cart-total-container {
+  border-top: 1px solid var(--gray);
+  text-align: end;
+  padding: 6px 16px 0 0;
+  font-size: 18px;
+}
+
+.cart-total-container strong {
+  margin-right: 12px;
+}
+
+.purchase-button {
+  display: flex;
+  margin: 24px auto 0;
+  background: var(--blue);
+  color: var(--white);
+  border: 0;
+  border-radius: 6px;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: filter 0.2s;
+}
+
+.purchase-button:hover {
+  filter: brightness(0.8);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 584px) {
+  .movie-title-large {
+    font-size: 36px;
+  }
+
+  .schedule-item {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .schedule-item + .schedule-item {
+    margin-top: 12px;
+  }
+
+  .show-date,
+  .show-place {
+    width: 32%;
+    padding: 4px;
+  }
+
+  .show-city {
+    width: 33%;
+    padding: 4px;
+  }
+
+  .buy-ticket-button {
+    width: 60%;
+    margin-top: 12px;
+    padding: 12px 2px;
+  }
+
+
+  .products-container {
+    justify-content: center;
+  }
+
+  .product-identification {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-product-title {
+    margin-top: 6px;
+  }
+
+  .product-qtd-input {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .remove-product-button {
+    display: block;
+    margin: 8px auto 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .about-movie-image {
+    width: 160px;
+  }
+
+  .main-footer-container {
+    flex-direction: column;
+  }
+
+  .movie-title-medium {
+    margin-bottom: 16px;
+  }
+}
