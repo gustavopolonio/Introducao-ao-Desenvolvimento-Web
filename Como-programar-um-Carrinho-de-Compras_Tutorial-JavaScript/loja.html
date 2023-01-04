@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <script src="loja.js" async></script>
+
+    <title>Homem Ferro | Loja</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav container">
+        <ul class="header-list-container list-container">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="loja.html">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <h1 class="movie-title-large movie-title">Homem de Ferro</h1>
+      <!-- Adicionar imagem de fundo no CSS -->
+    </header>
+
+    <main class="main-section">
+      <section class="container normal-section">
+        <h2 class="section-title">Posters</h2>
+
+        <div class="products-container">
+          <div class="movie-product">
+            <strong class="product-title">Poster 1</strong>
+            <!-- <br> -->
+            <img src="/images/poster1.png" alt="Poster 1" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$29,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">Poster 2</strong>
+            <!-- <br> -->
+            <img src="/images/poster2.png" alt="Poster 2" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$39,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+  
+          <div class="movie-product">
+            <strong class="product-title">Poster 3</strong>
+            <!-- <br> -->
+            <img src="/images/poster3.png" alt="Poster 3" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$19,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+  
+          <div class="movie-product">
+            <strong class="product-title">Poster 4</strong>
+            <!-- <br> -->
+            <img src="/images/poster4.png" alt="Poster 4" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$79,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container normal-section">
+        <h2 class="section-title">Produtos</h2>
+
+        <div class="products-container">
+          <div class="movie-product">
+            <strong class="product-title">Camiseta</strong>
+            <!-- <br> -->
+            <img src="images/produto1.png" alt="Camiseta" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$39,90</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">Miniatura</strong>
+            <!-- <br> -->
+            <img src="images/produto2.png" alt="Miniatura" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$69,90</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container normal-section">
+        <h2 class="section-title">Carrinho</h2>
+
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th class="table-head-item first-col">Item</th>
+              <th class="table-head-item second-col">Preço</th>
+              <th class="table-head-item third-col">Quantidade</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- <tr class="cart-product">
+              <td class="product-identification">
+                <img src="images/produto2.png" alt="Miniatura" class="cart-product-image">
+                <strong class="cart-product-title">Miniatura</strong>
+              </td>
+              <td>
+                <span class="cart-product-price">R$69,90</span>
+              </td>
+              <td>
+                <input type="number" value="2" min="0" class="product-qtd-input">
+                <button type="button" class="remove-product-button">Remover</button>
+              </td>
+            </tr>
+            <tr class="cart-product">
+              <td class="product-identification">
+                <img src="images/poster3.png" alt="Poster 3" class="cart-product-image">
+                <strong class="cart-product-title">Poster 3</strong>
+              </td>
+              <td>
+                <span class="cart-product-price">R$19,99</span>
+              </td>
+              <td>
+                <input type="number" value="1" min="0" class="product-qtd-input">
+                <button type="button" class="remove-product-button">Remover</button>
+              </td>
+            </tr> -->
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3" class="cart-total-container">
+                <strong>Total</strong>
+                <span>R$0,00</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <button type="button" class="purchase-button">Finalizar Compra</button>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="movie-title-medium movie-title">Homem de Ferro</h3>
+        <ul class="list-container">
+          <li class="footer-item">
+            <a href="https://pt-br.facebook.com/" target="_blank">
+              <img src="images/icon-facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://open.spotify.com/" target="_blank">
+              <img src="images/icon-spotify.svg" alt="Spotify logo">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/icon-youtube.svg" alt="Youtube logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
